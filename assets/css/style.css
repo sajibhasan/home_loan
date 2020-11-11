@@ -1,0 +1,283 @@
+@font-face {
+  src: url("../fonts/CircularStd-Bold.woff");
+  font-family: "Circular Bold";
+}
+@font-face {
+  src: url("../fonts/CircularStd-Book.woff");
+  font-family: "Circular Book";
+}
+@font-face {
+  src: url("../fonts/Nitti-Grotesk-SemiLight.woff");
+  font-family: "Nitti Grotesk Semi";
+}
+.bg-theme {
+  background: linear-gradient(90deg, #900a22 0%, #ca302d 100%);
+}
+
+.text-theme {
+  background: linear-gradient(90deg, #900a22 0%, #ca302d 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.btn-theme {
+  background: linear-gradient(90deg, #900a22 0%, #ca302d 100%);
+  color: #ffffff;
+  font-family: "Circular Book";
+  border-radius: 9999px;
+}
+.btn-theme:hover {
+  background: linear-gradient(90deg, #0a8d90 0%, #58ca2d 100%);
+  color: #ffffff;
+}
+
+.btn-theme-text {
+  font-family: "Circular Bold";
+  background: linear-gradient(90deg, #900a22 0%, #ca302d 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.site_navbar {
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  overflow: hidden;
+  padding: 0;
+}
+.site_navbar .navbar-brand {
+  font-family: "Circular Book";
+  padding-left: 40px;
+  padding-right: 40px;
+  font-size: 2rem;
+}
+.site_navbar .navbar-brand span {
+  margin-left: 5px;
+}
+.site_navbar #desktopMenu .navbar-nav .nav-link {
+  font-family: "Circular Book";
+  font-size: 1rem;
+  padding: 30px 35px;
+  color: #ffffff;
+}
+.site_navbar #desktopMenu .navbar-nav .nav-link span {
+  margin-left: 5px;
+}
+.site_navbar #desktopMenu .navbar-nav .nav-link:hover {
+  background: #900a22;
+}
+
+.hero_wrapper {
+  background: #ffffff url("../img/aussie-hero-image.png") no-repeat top center scroll;
+  background-size: cover;
+  object-fit: cover;
+  width: 100%;
+  height: 100vh;
+}
+.hero_wrapper .card {
+  border-radius: 1rem;
+  overflow: hidden;
+  transition-property: background, color;
+  transition-duration: 1s;
+}
+.hero_wrapper .card .card-body h2 {
+  font-family: "Circular Bold";
+  margin-bottom: 0.5rem;
+}
+.hero_wrapper .card .card-body h5 {
+  font-family: "Nitti Grotesk Semi";
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+}
+
+.service_wrapper .card {
+  position: relative;
+  cursor: pointer;
+  top: 0;
+  transition-property: top;
+  transition-duration: 0.5s;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.service_wrapper .card:hover {
+  border-bottom: 3px solid #ca302d !important;
+  top: -10px;
+}
+.service_wrapper .card:hover .card-img-top .service_icon {
+  left: 50%;
+  transform: translateX(-50%);
+}
+.service_wrapper .card .card-img-top img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+.service_wrapper .card .card-img-top .service_icon {
+  background: #ffffff;
+  padding: 1rem 1.4rem;
+  bottom: -20px;
+  left: 20px;
+  border-radius: 9999px;
+  transition-duration: 0.5s;
+  transition-property: left;
+}
+.service_wrapper .card .card-body h5 {
+  font-family: "Circular Bold";
+}
+.service_wrapper .card .card-body p {
+  font-family: "Nitti Grotesk Semi";
+  font-size: 1.1rem;
+}
+
+.calculation_wrapper .card {
+  background: #ffffff url("../img/Home-Loan.jpg") no-repeat top center scroll;
+  background-size: cover;
+  object-fit: cover;
+  border-radius: 1rem;
+  overflow: hidden;
+}
+.calculation_wrapper .card .card-body h1 {
+  font-family: "Circular Bold";
+  margin-bottom: 1.5rem;
+}
+
+.banner_section {
+  width: 100%;
+  height: 300px;
+  background: url("../img/Home-Loan.jpg") no-repeat top center fixed;
+  background-size: cover;
+  object-fit: cover;
+  position: relative;
+}
+.banner_section:before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, #900a22 0%, rgba(202, 48, 45, 0.4402135854) 100%);
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.footer_wrapper .footer_item h5 {
+  font-family: "Circular Book";
+  position: relative;
+  padding-bottom: 5px;
+  margin-bottom: 1.5rem;
+}
+.footer_wrapper .footer_item h5::after {
+  content: "";
+  width: 10%;
+  height: 2px;
+  background: linear-gradient(90deg, #900a22 0%, #ca302d 100%);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+.footer_wrapper .footer_item .nav .nav-item {
+  margin-bottom: 5px;
+}
+.footer_wrapper .footer_item .nav .nav-item:last-child {
+  margin-bottom: 0;
+}
+.footer_wrapper .footer_item .nav .nav-item .nav-link {
+  font-family: "Nitti Grotesk Semi";
+  padding: 0;
+}
+.footer_wrapper .copyright p {
+  font-family: "Nitti Grotesk Semi";
+  font-weight: 600;
+  font-size: 14px;
+  margin: 0;
+  text-align: justify;
+}
+
+.contact_wrapper {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 2000;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity;
+  transition-duration: 2s;
+}
+.contact_wrapper .contact_modal {
+  width: 70%;
+  height: 80%;
+  background: #ffffff;
+  border-radius: 1rem;
+  overflow: hidden;
+  position: relative;
+}
+.contact_wrapper .contact_modal .contact_modal_close {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 2000;
+}
+.contact_wrapper .contact_modal .contact_modal_close .btn {
+  border-bottom-left-radius: 15px;
+}
+.contact_wrapper .contact_modal .contact_modal_content {
+  width: 100%;
+  height: 100%;
+  overflow-y: auto;
+}
+.contact_wrapper .contact_modal .contact_modal_content .modal_title {
+  font-family: "Circular Bold";
+}
+.contact_wrapper .contact_modal .contact_modal_content .modal_suggestion {
+  font-family: "Nitti Grotesk Semi";
+}
+.contact_wrapper .contact_modal .contact_modal_content #contactFormAccordion .card .card-body h6 {
+  font-family: "Circular Book";
+}
+.contact_wrapper .contact_modal .contact_modal_content #contactFormAccordion .card .card-body .form-group label {
+  font-family: "Nitti Grotesk Semi";
+}
+.contact_wrapper .contact_modal .contact_modal_content #contactFormAccordion .card .card-body .form-group .form-control {
+  font-family: "Nitti Grotesk Semi";
+}
+.contact_wrapper .contact_modal .contact_modal_content #contactFormAccordion .card .card-body .form-group .contact_form_check {
+  display: inline-block;
+  font-family: "Nitti Grotesk Semi";
+  padding: 0.4rem 1rem;
+  border-radius: 9999px;
+  border: 1px solid #000000;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  user-select: none;
+  position: relative;
+  overflow: hidden;
+}
+.contact_wrapper .contact_modal .contact_modal_content #contactFormAccordion .card .card-body .form-group .contact_form_check input[type=checkbox], .contact_wrapper .contact_modal .contact_modal_content #contactFormAccordion .card .card-body .form-group .contact_form_check input[type=radio] {
+  appearance: none;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  cursor: pointer;
+  outline: 0;
+}
+.contact_wrapper .contact_modal .contact_modal_content #contactFormAccordion .card .card-footer {
+  text-align: right;
+  background: #ffffff;
+}
+
+@media (max-width: 767px) {
+  .contact_modal {
+    width: 95% !important;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
