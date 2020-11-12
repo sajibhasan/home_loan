@@ -15,17 +15,16 @@
 }
 
 .text-theme {
-  color: #900a22;
-  /* background: linear-gradient(90deg, #900a22 0%, #ca302d 100%);
+  background: linear-gradient(90deg, #900a22 0%, #ca302d 100%);
   -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent; */
+  -webkit-text-fill-color: transparent;
 }
 
 .btn-theme {
   background: linear-gradient(90deg, #900a22 0%, #ca302d 100%);
   color: #ffffff;
   font-family: "Circular Book";
-  border-radius: 9999px;
+  border-radius: 1.5rem;
 }
 .btn-theme:hover {
   background: linear-gradient(90deg, #0a8d90 0%, #58ca2d 100%);
@@ -34,10 +33,9 @@
 
 .btn-theme-text {
   font-family: "Circular Bold";
-  /* background: linear-gradient(90deg, #900a22 0%, #ca302d 100%);
+  background: linear-gradient(90deg, #900a22 0%, #ca302d 100%);
   -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent; */
-  color: #900a22;
+  -webkit-text-fill-color: transparent;
 }
 
 .site_navbar {
@@ -124,7 +122,7 @@
   padding: 1rem 1.4rem;
   bottom: -20px;
   left: 20px;
-  border-radius: 9999px;
+  border-radius: 50%;
   transition-duration: 0.5s;
   transition-property: left;
 }
@@ -259,7 +257,7 @@
   display: inline-block;
   font-family: "Nitti Grotesk Semi";
   padding: 0.4rem 1rem;
-  border-radius: 9999px;
+  border-radius: 1.5rem;
   border: 1px solid #000000;
   margin-right: 10px;
   margin-bottom: 10px;

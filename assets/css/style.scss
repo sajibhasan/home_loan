@@ -32,7 +32,7 @@ $bgColor: linear-gradient(90deg, rgba(144, 10, 34, 1) 0%, rgba(202, 48, 45, 1) 1
   background: $bgColor;
   color: #ffffff;
   font-family: 'Circular Book';
-  border-radius: 9999px;
+  border-radius: 1.5rem;
 
 
   &:hover {
@@ -156,7 +156,7 @@ $bgColor: linear-gradient(90deg, rgba(144, 10, 34, 1) 0%, rgba(202, 48, 45, 1) 1
         padding: 1rem 1.4rem;
         bottom: -20px;
         left: 20px;
-        border-radius: 9999px;
+        border-radius: 50%;
         transition-duration: .5s;
         transition-property: left;
       }
@@ -345,7 +345,7 @@ $bgColor: linear-gradient(90deg, rgba(144, 10, 34, 1) 0%, rgba(202, 48, 45, 1) 1
                 display: inline-block;
                 font-family: 'Nitti Grotesk Semi';
                 padding: .4rem 1rem;
-                border-radius: 9999px;
+                border-radius: 1.5rem;
                 border: 1px solid #000000;
                 margin-right: 10px;
                 margin-bottom: 10px;
