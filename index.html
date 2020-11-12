@@ -5,7 +5,7 @@
     <meta content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
           name="viewport">
     <meta content="ie=edge" http-equiv="X-UA-Compatible">
-    <title>Document</title>
+    <title>Home Loan</title>
     <link href="./assets/css/all.min.css" rel="stylesheet"/>
     <link href="./assets/css/bootstrap.min.css" rel="stylesheet"/>
     <link href="./assets/css/style.css" rel="stylesheet"/>
@@ -15,33 +15,134 @@
 
 <div class="navbar_wrapper fixed-top">
     <div class="container-fluid">
-        <nav class="navbar bg-theme navbar-dark navbar-expand-md site_navbar">
-            <a class="navbar-brand" href="">
-                <i class="fas fa-igloo"></i>
-                <span>Aussie</span>
-            </a>
+        <div class="site_navbar">
+            <div class="site_navbar_brand">
+                <a href="#">
+                    <i class="fas fa-igloo"></i>
+                    <span>Aussie</span>
+                </a>
 
-            <div class="collapse navbar-collapse" id="desktopMenu">
-                <ul class="navbar-nav ml-auto">
+                <button class="btn btn-transparent mobileNavToggler">
+                    <i class="fas fa-bars fa-2x"></i>
+                </button>
+            </div>
+
+            <div class="site_navbar_nav">
+                <ul class="nav justify-content-end">
                     <li class="nav-item">
                         <a class="nav-link" href="">
                             <i class="fas fa-bars"></i>
                             <span>Menu</span>
                         </a>
                     </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link" href="javascript:void(0)">
+                            <i class="far fa-money-bill-alt"></i>
+                            <span>Loan</span>
+                        </a>
+
+                        <div class="dropdown_nav">
+                            <a class="dropdown_nav_item" href="">Home Loan</a>
+                            <a class="dropdown_nav_item" href="">Car Loan</a>
+                            <a class="dropdown_nav_item" href="">Personal Loan</a>
+                            <a class="dropdown_nav_item" href="">Business Loan</a>
+                            <a class="dropdown_nav_item" href="">Loan Refinance</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link" href="javascript:void(0)">
+                            <i class="fas fa-calculator"></i>
+                            <span>Calculator</span>
+                        </a>
+
+                        <div class="dropdown_nav">
+                            <a class="dropdown_nav_item" href="">Mortgage Repayments</a>
+                            <a class="dropdown_nav_item" href="">Borrowing Power</a>
+                            <a class="dropdown_nav_item" href="">Extra Repayments</a>
+                            <a class="dropdown_nav_item" href="">Savings</a>
+                            <a class="dropdown_nav_item" href="">Stamp duty</a>
+                        </div>
+                    </li>
                     <li class="nav-item">
                         <a class="nav-link" href="">
-                            <i class="fas fa-search"></i>
-                            <span>Search</span>
+                            <i class="fas fa-question"></i>
+                            <span>Why Aussie</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="">
+                            <i class="fas fa-handshake"></i>
+                            <span>Get in touch</span>
                         </a>
                     </li>
                 </ul>
             </div>
-        </nav>
+        </div>
     </div>
 </div>
 
-<div class="hero_wrapper d-flex flex-column justify-content-end align-items-center pb-lg-2 pb-md-2">
+<div class="site_navbar_mobile_nav">
+    <ul class="nav flex-column">
+        <li class="nav-item brand">
+            <a class="nav-link " href="">
+                <i class="fas fa-igloo"></i>
+                <span>Aussie</span>
+            </a>
+
+            <button class="btn btn-transparent site_navbar_mobile_nav_close">
+                <i class="fas fa-times fa-3x text-white"></i>
+            </button>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="">
+                <i class="fas fa-bars"></i>
+                <span>Menu</span>
+            </a>
+        </li>
+        <li class="nav-item dropdown">
+            <a class="nav-link" href="javascript:void(0)">
+                <i class="far fa-money-bill-alt"></i>
+                <span>Loan</span>
+            </a>
+
+            <div class="dropdown_nav">
+                <a class="dropdown_nav_item" href="">Home Loan</a>
+                <a class="dropdown_nav_item" href="">Car Loan</a>
+                <a class="dropdown_nav_item" href="">Personal Loan</a>
+                <a class="dropdown_nav_item" href="">Business Loan</a>
+                <a class="dropdown_nav_item" href="">Loan Refinance</a>
+            </div>
+        </li>
+        <li class="nav-item dropdown">
+            <a class="nav-link" href="javascript:void(0)">
+                <i class="fas fa-calculator"></i>
+                <span>Calculator</span>
+            </a>
+
+            <div class="dropdown_nav">
+                <a class="dropdown_nav_item" href="">Mortgage Repayments</a>
+                <a class="dropdown_nav_item" href="">Borrowing Power</a>
+                <a class="dropdown_nav_item" href="">Extra Repayments</a>
+                <a class="dropdown_nav_item" href="">Savings</a>
+                <a class="dropdown_nav_item" href="">Stamp duty</a>
+            </div>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="">
+                <i class="fas fa-question"></i>
+                <span>Why Aussie</span>
+            </a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="">
+                <i class="fas fa-handshake"></i>
+                <span>Get in touch</span>
+            </a>
+        </li>
+    </ul>
+</div>
+
+<div class="hero_wrapper d-flex flex-column justify-content-end align-items-center pb-lg-3 pb-md-3">
     <div class="container-fluid">
         <div class="row justify-content-center align-items-center">
             <div class="col-lg-7 col-md-7 col-12">

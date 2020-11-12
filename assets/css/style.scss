@@ -23,9 +23,10 @@ $bgColor: linear-gradient(90deg, rgba(144, 10, 34, 1) 0%, rgba(202, 48, 45, 1) 1
 }
 
 .text-theme {
-  background: $bgColor;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: rgba(144, 10, 34, 1);
+  //background: $bgColor;
+  //-webkit-background-clip: text;
+  //-webkit-text-fill-color: transparent;
 }
 
 .btn-theme {
@@ -43,45 +44,195 @@ $bgColor: linear-gradient(90deg, rgba(144, 10, 34, 1) 0%, rgba(202, 48, 45, 1) 1
 
 .btn-theme-text {
   font-family: 'Circular Bold';
-  background: $bgColor;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: rgba(144, 10, 34, 1);
+  //background: $bgColor;
+  //-webkit-background-clip: text;
+  //-webkit-text-fill-color: transparent;
 }
 
-.site_navbar {
-  border-bottom-left-radius: 15px;
-  border-bottom-right-radius: 15px;
-  overflow: hidden;
-  padding: 0;
+.navbar_wrapper {
+  .site_navbar {
+    width: 100%;
+    height: 80px;
+    background: $bgColor;
+    box-sizing: border-box;
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 
-  .navbar-brand {
-    font-family: "Circular Book";
-    padding-left: 40px;
-    padding-right: 40px;
-    font-size: 2rem;
+    .site_navbar_brand {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
 
-    span {
-      margin-left: 5px;
+      padding: 0 15px;
+
+      a {
+        display: inline-block;
+        text-decoration: none;
+        color: #ffffff;
+        font-family: 'Circular Book';
+        font-size: 2rem;
+      }
+
+      .mobileNavToggler {
+        display: none;
+        color: #ffffff;
+        font-family: 'Circular Book';
+      }
     }
-  }
 
-  #desktopMenu {
-    .navbar-nav {
+    .site_navbar_nav {
+      .nav-item.dropdown {
+        position: relative;
+
+        .dropdown_nav {
+          width: 200px;
+          box-sizing: border-box;
+          position: absolute;
+          left: 0;
+          top: 60px;
+          background: $bgColor;
+          display: none;
+
+          .dropdown_nav_item {
+            color: #ffffff;
+            font-family: "Circular Book";
+            text-decoration: none;
+            font-size: 1rem;
+            display: block;
+            padding: 10px;
+            border-top: 1px solid crimson;
+
+            &:first-child {
+              border-top: 0;
+            }
+
+            &:hover {
+              background: linear-gradient(90deg, rgba(10, 141, 144, 1) 0%, rgba(88, 202, 45, 1) 100%);
+            }
+          }
+        }
+      }
+
       .nav-link {
         font-family: 'Circular Book';
-        font-size: 1rem;
-        padding: 30px 35px;
         color: #ffffff;
+        transition-property: color;
+        transition-duration: .5s;
 
         span {
           margin-left: 5px;
         }
 
         &:hover {
-          background: rgba(144, 10, 34, 1);
+          color: rgba(10, 141, 144, 1);
         }
       }
     }
+  }
+}
+
+.site_navbar_mobile_nav {
+  display: none;
+  width: 50%;
+  height: 100%;
+  box-sizing: border-box;
+  padding: 2rem 1.5rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: $bgColor;
+  z-index: 2000;
+  overflow: auto;
+
+  .nav {
+    .brand {
+      position: relative;
+
+      .nav-link {
+        font-family: 'Circular Book';
+        font-size: 2.5rem;
+        text-align: center;
+      }
+
+      .site_navbar_mobile_nav_close {
+        position: absolute;
+        top: 50%;
+        right: 0;
+        transform: translateY(-50%);
+      }
+    }
+
+    .nav-item {
+      width: 100%;
+    }
+
+    .nav-item.dropdown {
+      .dropdown_nav {
+        width: 80%;
+        margin: 0 auto;
+        box-sizing: border-box;
+        display: none;
+
+        .dropdown_nav_item {
+          color: #ffffff;
+          font-family: "Circular Book";
+          text-decoration: none;
+          font-size: 1rem;
+          display: block;
+          padding: 10px;
+          border-top: 1px solid crimson;
+
+          &:first-child {
+            border-top: 0;
+          }
+
+          &:hover {
+            background: linear-gradient(90deg, rgba(10, 141, 144, 1) 0%, rgba(88, 202, 45, 1) 100%);
+          }
+        }
+      }
+    }
+
+    .nav-link {
+      font-family: 'Circular Book';
+      font-size: 1.2rem;
+      color: #ffffff;
+      padding: 20px;
+
+      span {
+        margin-left: 5px;
+      }
+
+      &:hover {
+        color: #0a8d90;
+      }
+    }
+  }
+}
+
+@media(max-width: 972px) {
+  .navbar_wrapper {
+    .site_navbar_brand {
+      flex: 1;
+
+      .mobileNavToggler {
+        display: block !important;
+      }
+    }
+
+    .site_navbar_nav {
+      display: none;
+    }
+  }
+}
+
+@media(max-width: 767px) {
+  .site_navbar_mobile_nav {
+    width: 100%;
   }
 }
 
@@ -118,7 +269,47 @@ $bgColor: linear-gradient(90deg, rgba(144, 10, 34, 1) 0%, rgba(202, 48, 45, 1) 1
 // Hero Wrapper Media Query
 @media(max-width: 767px) {
   .hero_wrapper {
-    padding-bottom: 5rem;
+    padding-bottom: 2rem;
+  }
+}
+
+@media(max-width: 414px) {
+  .hero_wrapper {
+    height: 90vh;
+    padding-bottom: 2.5rem;
+
+    .card-body {
+      h2 {
+        font-size: 2.3rem;
+      }
+    }
+  }
+}
+
+@media(max-width: 380px) {
+  .hero_wrapper {
+    height: 70vh;
+    padding-bottom: 2.5rem;
+
+    .card-body {
+      h2 {
+        font-size: 2.3rem;
+      }
+    }
+  }
+}
+
+
+@media(max-width: 374px) {
+  .hero_wrapper {
+    height: 90vh;
+    padding-bottom: 2rem;
+
+    .card-body {
+      h2 {
+        font-size: 2rem;
+      }
+    }
   }
 }
 

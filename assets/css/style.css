@@ -15,9 +15,7 @@
 }
 
 .text-theme {
-  background: linear-gradient(90deg, #900a22 0%, #ca302d 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: #900a22;
 }
 
 .btn-theme {
@@ -33,39 +31,158 @@
 
 .btn-theme-text {
   font-family: "Circular Bold";
-  background: linear-gradient(90deg, #900a22 0%, #ca302d 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: #900a22;
 }
 
-.site_navbar {
-  border-bottom-left-radius: 15px;
-  border-bottom-right-radius: 15px;
-  overflow: hidden;
-  padding: 0;
+.navbar_wrapper .site_navbar {
+  width: 100%;
+  height: 80px;
+  background: linear-gradient(90deg, #900a22 0%, #ca302d 100%);
+  box-sizing: border-box;
+  border-bottom-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
-.site_navbar .navbar-brand {
+.navbar_wrapper .site_navbar .site_navbar_brand {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 15px;
+}
+.navbar_wrapper .site_navbar .site_navbar_brand a {
+  display: inline-block;
+  text-decoration: none;
+  color: #ffffff;
   font-family: "Circular Book";
-  padding-left: 40px;
-  padding-right: 40px;
   font-size: 2rem;
 }
-.site_navbar .navbar-brand span {
-  margin-left: 5px;
-}
-.site_navbar #desktopMenu .navbar-nav .nav-link {
-  font-family: "Circular Book";
-  font-size: 1rem;
-  padding: 30px 35px;
+.navbar_wrapper .site_navbar .site_navbar_brand .mobileNavToggler {
+  display: none;
   color: #ffffff;
+  font-family: "Circular Book";
 }
-.site_navbar #desktopMenu .navbar-nav .nav-link span {
+.navbar_wrapper .site_navbar .site_navbar_nav .nav-item.dropdown {
+  position: relative;
+}
+.navbar_wrapper .site_navbar .site_navbar_nav .nav-item.dropdown .dropdown_nav {
+  width: 200px;
+  box-sizing: border-box;
+  position: absolute;
+  left: 0;
+  top: 60px;
+  background: linear-gradient(90deg, #900a22 0%, #ca302d 100%);
+  display: none;
+}
+.navbar_wrapper .site_navbar .site_navbar_nav .nav-item.dropdown .dropdown_nav .dropdown_nav_item {
+  color: #ffffff;
+  font-family: "Circular Book";
+  text-decoration: none;
+  font-size: 1rem;
+  display: block;
+  padding: 10px;
+  border-top: 1px solid crimson;
+}
+.navbar_wrapper .site_navbar .site_navbar_nav .nav-item.dropdown .dropdown_nav .dropdown_nav_item:first-child {
+  border-top: 0;
+}
+.navbar_wrapper .site_navbar .site_navbar_nav .nav-item.dropdown .dropdown_nav .dropdown_nav_item:hover {
+  background: linear-gradient(90deg, #0a8d90 0%, #58ca2d 100%);
+}
+.navbar_wrapper .site_navbar .site_navbar_nav .nav-link {
+  font-family: "Circular Book";
+  color: #ffffff;
+  transition-property: color;
+  transition-duration: 0.5s;
+}
+.navbar_wrapper .site_navbar .site_navbar_nav .nav-link span {
   margin-left: 5px;
 }
-.site_navbar #desktopMenu .navbar-nav .nav-link:hover {
-  background: #900a22;
+.navbar_wrapper .site_navbar .site_navbar_nav .nav-link:hover {
+  color: #0a8d90;
 }
 
+.site_navbar_mobile_nav {
+  display: none;
+  width: 50%;
+  height: 100%;
+  box-sizing: border-box;
+  padding: 2rem 1.5rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: linear-gradient(90deg, #900a22 0%, #ca302d 100%);
+  z-index: 2000;
+  overflow: auto;
+}
+.site_navbar_mobile_nav .nav .brand {
+  position: relative;
+}
+.site_navbar_mobile_nav .nav .brand .nav-link {
+  font-family: "Circular Book";
+  font-size: 2.5rem;
+  text-align: center;
+}
+.site_navbar_mobile_nav .nav .brand .site_navbar_mobile_nav_close {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+}
+.site_navbar_mobile_nav .nav .nav-item {
+  width: 100%;
+}
+.site_navbar_mobile_nav .nav .nav-item.dropdown .dropdown_nav {
+  width: 80%;
+  margin: 0 auto;
+  box-sizing: border-box;
+  display: none;
+}
+.site_navbar_mobile_nav .nav .nav-item.dropdown .dropdown_nav .dropdown_nav_item {
+  color: #ffffff;
+  font-family: "Circular Book";
+  text-decoration: none;
+  font-size: 1rem;
+  display: block;
+  padding: 10px;
+  border-top: 1px solid crimson;
+}
+.site_navbar_mobile_nav .nav .nav-item.dropdown .dropdown_nav .dropdown_nav_item:first-child {
+  border-top: 0;
+}
+.site_navbar_mobile_nav .nav .nav-item.dropdown .dropdown_nav .dropdown_nav_item:hover {
+  background: linear-gradient(90deg, #0a8d90 0%, #58ca2d 100%);
+}
+.site_navbar_mobile_nav .nav .nav-link {
+  font-family: "Circular Book";
+  font-size: 1.2rem;
+  color: #ffffff;
+  padding: 20px;
+}
+.site_navbar_mobile_nav .nav .nav-link span {
+  margin-left: 5px;
+}
+.site_navbar_mobile_nav .nav .nav-link:hover {
+  color: #0a8d90;
+}
+
+@media (max-width: 972px) {
+  .navbar_wrapper .site_navbar_brand {
+    flex: 1;
+  }
+  .navbar_wrapper .site_navbar_brand .mobileNavToggler {
+    display: block !important;
+  }
+  .navbar_wrapper .site_navbar_nav {
+    display: none;
+  }
+}
+@media (max-width: 767px) {
+  .site_navbar_mobile_nav {
+    width: 100%;
+  }
+}
 .hero_wrapper {
   background: #ffffff url("../img/aussie-hero-image.png") no-repeat top center scroll;
   background-size: cover;
@@ -92,7 +209,34 @@
 
 @media (max-width: 767px) {
   .hero_wrapper {
-    padding-bottom: 5rem;
+    padding-bottom: 2rem;
+  }
+}
+@media (max-width: 414px) {
+  .hero_wrapper {
+    height: 90vh;
+    padding-bottom: 2.5rem;
+  }
+  .hero_wrapper .card-body h2 {
+    font-size: 2.3rem;
+  }
+}
+@media (max-width: 380px) {
+  .hero_wrapper {
+    height: 70vh;
+    padding-bottom: 2.5rem;
+  }
+  .hero_wrapper .card-body h2 {
+    font-size: 2.3rem;
+  }
+}
+@media (max-width: 374px) {
+  .hero_wrapper {
+    height: 90vh;
+    padding-bottom: 2rem;
+  }
+  .hero_wrapper .card-body h2 {
+    font-size: 2rem;
   }
 }
 .service_wrapper .card {
