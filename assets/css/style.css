@@ -15,9 +15,10 @@
 }
 
 .text-theme {
-  background: linear-gradient(90deg, #900a22 0%, #ca302d 100%);
+  color: #900a22;
+  /* background: linear-gradient(90deg, #900a22 0%, #ca302d 100%);
   -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  -webkit-text-fill-color: transparent; */
 }
 
 .btn-theme {
@@ -33,9 +34,10 @@
 
 .btn-theme-text {
   font-family: "Circular Bold";
-  background: linear-gradient(90deg, #900a22 0%, #ca302d 100%);
+  /* background: linear-gradient(90deg, #900a22 0%, #ca302d 100%);
   -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  -webkit-text-fill-color: transparent; */
+  color: #900a22;
 }
 
 .site_navbar {
