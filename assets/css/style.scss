@@ -85,12 +85,14 @@ $bgColor: linear-gradient(90deg, rgba(144, 10, 34, 1) 0%, rgba(202, 48, 45, 1) 1
   }
 }
 
+// Hero Wrapper
 .hero_wrapper {
   background: #ffffff url("../img/aussie-hero-image.png") no-repeat top center scroll;
   background-size: cover;
   object-fit: cover;
   width: 100%;
   height: 100vh;
+  box-sizing: border-box;
 
   .card {
     border-radius: 1rem;
@@ -110,6 +112,13 @@ $bgColor: linear-gradient(90deg, rgba(144, 10, 34, 1) 0%, rgba(202, 48, 45, 1) 1
         margin-bottom: 1.5rem;
       }
     }
+  }
+}
+
+// Hero Wrapper Media Query
+@media(max-width: 767px) {
+  .hero_wrapper {
+    padding-bottom: 5rem;
   }
 }
 
@@ -292,6 +301,7 @@ $bgColor: linear-gradient(90deg, rgba(144, 10, 34, 1) 0%, rgba(202, 48, 45, 1) 1
       width: 100%;
       height: 100%;
       overflow-y: auto;
+      -webkit-overflow-scrolling: touch;
 
 
       .modal_title {
@@ -321,6 +331,8 @@ $bgColor: linear-gradient(90deg, rgba(144, 10, 34, 1) 0%, rgba(202, 48, 45, 1) 1
               .contact_form_check {
                 input[type='checkbox'], input[type='radio'] {
                   appearance: none;
+                  -webkit-appearance: none;
+                  -moz-appearance: none;
                   position: absolute;
                   width: 100%;
                   height: 100%;
@@ -357,7 +369,7 @@ $bgColor: linear-gradient(90deg, rgba(144, 10, 34, 1) 0%, rgba(202, 48, 45, 1) 1
 }
 
 @media(max-width: 767px) {
-  .contact_modal{
+  .contact_modal {
     width: 95% !important;
   }
 }

@@ -5,7 +5,7 @@
     <meta content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
           name="viewport">
     <meta content="ie=edge" http-equiv="X-UA-Compatible">
-    <title>Home Loan</title>
+    <title>Document</title>
     <link href="./assets/css/all.min.css" rel="stylesheet"/>
     <link href="./assets/css/bootstrap.min.css" rel="stylesheet"/>
     <link href="./assets/css/style.css" rel="stylesheet"/>
@@ -41,7 +41,7 @@
     </div>
 </div>
 
-<div class="hero_wrapper d-flex flex-column justify-content-end align-items-center pb-2">
+<div class="hero_wrapper d-flex flex-column justify-content-end align-items-center pb-lg-2 pb-md-2">
     <div class="container-fluid">
         <div class="row justify-content-center align-items-center">
             <div class="col-lg-7 col-md-7 col-12">
@@ -151,7 +151,7 @@
 <div class="service_wrapper py-5">
     <div class="container">
         <div class="row justify-content-center align-items-center">
-            <div class="col-lg-4 col-md-4 col-12 mb-lg-0 mb-md-0 mb-3">
+            <div class="col-lg-4 col-md-4 col-12">
                 <div class="card border-0 shadow">
                     <div class="card-img-top position-relative">
                         <img alt="Card Image"
@@ -170,7 +170,7 @@
                 </div>
             </div>
 
-            <div class="col-lg-4 col-md-4 col-12 mb-lg-0 mb-md-0 mb-3">
+            <div class="col-lg-4 col-md-4 col-12">
                 <div class="card border-0 shadow">
                     <div class="card-img-top position-relative">
                         <img alt="Card Image"
@@ -331,32 +331,36 @@
                                         <div class="row">
                                             <div class="col-lg-6 col-md-6 col-12">
                                                 <div class="form-group">
-                                                    <label for="">First Name *</label>
-                                                    <input class="form-control" placeholder="Enter your first name"
+                                                    <label for="first_name">First Name *</label>
+                                                    <input class="form-control" id="first_name"
+                                                           placeholder="Enter your first name"
                                                            type="text">
                                                 </div>
                                             </div>
 
                                             <div class="col-lg-6 col-md-6 col-12">
                                                 <div class="form-group">
-                                                    <label for="">Last Name *</label>
-                                                    <input class="form-control" placeholder="Enter your last name"
+                                                    <label for="last_name">Last Name *</label>
+                                                    <input class="form-control" id="last_name"
+                                                           placeholder="Enter your last name"
                                                            type="text">
                                                 </div>
                                             </div>
 
                                             <div class="col-lg-6 col-md-6 col-12">
                                                 <div class="form-group">
-                                                    <label for="">Contact Number *</label>
-                                                    <input class="form-control" placeholder="Enter your phone number"
+                                                    <label for="contact_number">Contact Number *</label>
+                                                    <input class="form-control" id="contact_number"
+                                                           placeholder="Enter your phone number"
                                                            type="text">
                                                 </div>
                                             </div>
 
                                             <div class="col-lg-6 col-md-6 col-12">
                                                 <div class="form-group">
-                                                    <label for="">Email *</label>
-                                                    <input class="form-control" placeholder="Enter your email address"
+                                                    <label for="email">Email *</label>
+                                                    <input class="form-control" id="email"
+                                                           placeholder="Enter your email address"
                                                            type="email">
                                                 </div>
                                             </div>
@@ -379,8 +383,8 @@
                                         <div class="row mb-2">
                                             <div class="col-lg-6 col-md-6 col-12">
                                                 <div class="form-group">
-                                                    <label for="">Suburb *</label>
-                                                    <input class="form-control" placeholder="Suburb"
+                                                    <label for="suburb">Suburb *</label>
+                                                    <input class="form-control" id="suburb" placeholder="Suburb"
                                                            type="text">
                                                 </div>
                                             </div>
@@ -388,10 +392,9 @@
 
                                         <h6>What can we help you with?</h6>
                                         <div class="form-group mb-4">
-                                            <label class="d-block mb-3" for="">Choose the option or options that best
-                                                suit
-                                                you
-                                                *</label>
+                                            <label class="d-block mb-3">
+                                                Choose the option or options that best suit you *
+                                            </label>
 
                                             <span class="contact_form_check">
                                                 <input name="suit" type="checkbox">
@@ -412,7 +415,7 @@
 
                                         <h6>What best describes your income source?</h6>
                                         <div class="form-group">
-                                            <label class="d-block mb-3" for="">Choose the option that best suits you
+                                            <label class="d-block mb-3">Choose the option that best suits you
                                                 *</label>
                                             <span class="contact_form_check">
                                                 <input name="income" type="radio" value="employed">
