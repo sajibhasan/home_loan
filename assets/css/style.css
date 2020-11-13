@@ -223,8 +223,8 @@
 }
 @media (max-width: 380px) {
   .hero_wrapper {
-    height: 70vh;
-    padding-bottom: 2.5rem;
+    height: 500px;
+    padding-bottom: 1.5rem;
   }
   .hero_wrapper .card-body h2 {
     font-size: 2.3rem;
