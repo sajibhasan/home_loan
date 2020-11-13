@@ -96,6 +96,11 @@
   transition-property: color;
   transition-duration: 0.5s;
 }
+.navbar_wrapper .site_navbar .site_navbar_nav .nav-link .dropdown_icon {
+  font-size: 10px;
+  position: relative;
+  top: -3px;
+}
 .navbar_wrapper .site_navbar .site_navbar_nav .nav-link span {
   margin-left: 5px;
 }
@@ -160,6 +165,11 @@
   color: #ffffff;
   padding: 20px;
 }
+.site_navbar_mobile_nav .nav .nav-link .dropdown_icon {
+  font-size: 10px;
+  position: relative;
+  top: -3px;
+}
 .site_navbar_mobile_nav .nav .nav-link span {
   margin-left: 5px;
 }
@@ -212,9 +222,9 @@
     padding-bottom: 2rem;
   }
 }
-@media (max-width: 414px) {
+@media (max-width: 450px) {
   .hero_wrapper {
-    height: 90vh;
+    height: 500px;
     padding-bottom: 2.5rem;
   }
   .hero_wrapper .card-body h2 {

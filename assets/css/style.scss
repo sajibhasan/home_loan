@@ -123,6 +123,12 @@ $bgColor: linear-gradient(90deg, rgba(144, 10, 34, 1) 0%, rgba(202, 48, 45, 1) 1
         transition-property: color;
         transition-duration: .5s;
 
+        .dropdown_icon {
+          font-size: 10px;
+          position: relative;
+          top: -3px;
+        }
+
         span {
           margin-left: 5px;
         }
@@ -203,6 +209,12 @@ $bgColor: linear-gradient(90deg, rgba(144, 10, 34, 1) 0%, rgba(202, 48, 45, 1) 1
       color: #ffffff;
       padding: 20px;
 
+      .dropdown_icon {
+        font-size: 10px;
+        position: relative;
+        top: -3px;
+      }
+
       span {
         margin-left: 5px;
       }
@@ -273,9 +285,9 @@ $bgColor: linear-gradient(90deg, rgba(144, 10, 34, 1) 0%, rgba(202, 48, 45, 1) 1
   }
 }
 
-@media(max-width: 414px) {
+@media(max-width: 450px) {
   .hero_wrapper {
-    height: 90vh;
+    height: 500px;
     padding-bottom: 2.5rem;
 
     .card-body {
